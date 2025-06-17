@@ -1,0 +1,37 @@
+esse readme é sobre grafico 
+
+
+
+Aqui está um README.md para o seu gráfico de filmes, baseado no código que você forneceu:
+Gráfico de Filmes por Gênero
+
+Este é um projeto simples que exibe um gráfico de pizza mostrando a distribuição de filmes por gênero. Ele utiliza a biblioteca Chart.js para renderizar o gráfico diretamente no navegador.
+Como Usar
+
+    Salve o arquivo: Copie o código HTML e salve-o em um arquivo com a extensão .html (por exemplo, grafico.html).
+    Abra no navegador: Abra o arquivo grafico.html em qualquer navegador web (Chrome, Firefox, Edge, etc.).
+
+Você verá um gráfico de pizza que representa os gêneros de filmes definidos no código.
+Personalização
+
+Atualmente, os dados do gráfico são estáticos e definidos diretamente no arquivo HTML. Para personalizá-lo:
+
+    Altere os dados: Modifique o objeto dados dentro da tag <script> para incluir seus próprios gêneros e quantidades de filmes.
+    JavaScript
+
+    const dados = {
+      labels: ['Ação', 'Drama', 'Comédia', 'Ficção Científica'], // Seus rótulos de gênero
+      datasets: [{
+        label: 'Filmes por Gênero',
+        data: [12, 5, 7, 10], // Suas quantidades de filmes para cada gênero
+        backgroundColor: ['red', 'blue', 'green', 'purple'] // Cores para cada fatia do gráfico
+      }]
+    };
+
+    Conecte a uma fonte de dados: Para um uso mais dinâmico, você pode substituir os dados estáticos por dados provenientes de um arquivo JSON, uma API ou qualquer outra fonte de dados do seu projeto. Isso envolveria fazer uma requisição (por exemplo, usando fetch()) para obter os dados e então atualizar o objeto dados do Chart.js.
+
+Tecnologias Utilizadas
+
+    HTML5: Estrutura básica da página.
+    Chart.js: Biblioteca JavaScript para criação de gráficos.
+    JavaScript: Lógica para manipular os dados e renderizar o gráfico.

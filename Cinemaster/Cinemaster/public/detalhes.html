@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cinemaster: sua plataforma para os melhores filmes e serviços de streaming." />
+  <title>Cinemaster - Detalhes do Filme</title>
+  
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="detalhes.css" />
+
+  <!-- Font Awesome para ícones sociais -->
+  <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTTXRNmXtF2nFT0dQ1JmZz7bZ0F3+K1n5YZ6R9eB2XIKU4ldtkZKZmdmG4EX+6V0N4P3PSZQug=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <header>
+    <h1>Cinemaster</h1>
+    <nav>
+      <a href="index.html" class="nav-btn">Início</a>
+      <a href="#elenco" class="nav-btn">Elenco</a>
+      <a href="#diretores" class="nav-btn">Diretores</a>
+      <a href="#trailer" class="nav-btn">Trailer</a>
+      <a href="#galeria" class="nav-btn">Galeria</a>
+    </nav>
+  </header>
+  
+  
+
+  <main class="main-details">
+    <!-- Container onde os detalhes do filme serão carregados -->
+    <div id="detalhes-filme" class="card"></div>
+
+    <!-- Botões -->
+    <div class="botoes">
+      <a href="index.html" class="btn-voltar">Voltar para a Home</a>
+      <button class="btn-favoritar">Favoritar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <span class="highlight">Cinemaster</span> - Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" class="facebook" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com" class="instagram" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.twitter.com" class="twitter" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    if (!id) {
+      document.getElementById("detalhes-filme").innerHTML = "<p>Filme não encontrado.</p>";
+      return;
+    }
+
+    try {
+      const resposta = await fetch("dados.json"); // caminho do seu JSON
+      const filmes = await resposta.json();
+      const filme = filmes.find(f => f.id === parseInt(id));
+
+      if (!filme) {
+        document.getElementById("detalhes-filme").innerHTML = "<p>Filme não encontrado.</p>";
+        return;
+      }
+
+      // Monta HTML
+      document.getElementById("detalhes-filme").innerHTML = `
+        <img src="${filme.imagem}" alt="${filme.titulo}" class="img-detalhes"/>
+        <h2>${filme.titulo}</h2>
+        <p><strong>Gênero:</strong> ${filme.genero}</p>
+        <p><strong>Ano:</strong> ${filme.ano}</p>
+        <p><strong>Avaliação:</strong> ${filme.avaliacao}</p>
+        <p>${filme.descricao}</p>
+      `;
+    } catch (erro) {
+      console.error("Erro ao carregar detalhes:", erro);
+      document.getElementById("detalhes-filme").innerHTML = "<p>Erro ao carregar o filme.</p>";
+    }
+  });
+</script>
+
+
+</body>
+</html>
+

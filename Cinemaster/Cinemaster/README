@@ -1,0 +1,73 @@
+Critérios de Avaliação
+Critério 	Descrição
+Estrutura do projeto 	Organização adequada das pastas (db/, public/)
+Configuração e uso do JSON Server 	JSON Server configurado corretamente e API funcionando
+Consumo da API com Fetch 	Listagem e detalhes funcionando corretamente
+Navegação entre páginas 	Passagem correta de parâmetros via query string
+Estilização 	Layout funcional, responsivo básico e visual agradável
+Controle de versão 	Commits incrementais claros e tags nas etapas principais
+Documentação 	README completo com prints e estrutura de dados JSON incluída
+
+--------------------------------------------------------------------------------------------------------------
+
+
+Estrutura do Projeto
+
+O projeto está organizado em duas pastas principais:
+
+public/: Contém os arquivos de front-end (HTML, CSS, JavaScript e imagens).
+
+index.html: Página inicial com listagem de filmes.
+
+detalhes.html: Página de detalhes dos filmes.
+
+style.css: Arquivo de estilos globais. (Obs:A outros css criados para não ocorrer erro ou alguma confusão na hora de programar como detalhes.css )
+
+app.js: Código JavaScript que gerencia a interação e o carregamento dos filmes.
+
+img/: Pasta com as imagens dos filmes. (ainda sera implementada)
+
+db/: (Opcional) Caso o projeto seja configurado para uso com JSON Server.
+
+db.json: Arquivo JSON contendo os dados dos filmes (não utilizado neste projeto por restrição).
+
+Funcionalidades
+
+Listagem de filmes por categoria (Lançamentos, Populares, Em Breve, Clássicos).
+
+Pesquisa de filmes por título.
+
+Navegação para a página de detalhes de cada filme.
+
+Sistema de cadastro e login (apenas simulado no front-end).
+
+Responsividade básica para diferentes dispositivos.
+
+
+
+Estrutura dos Dados (JSON)
+
+[
+  {
+    "id": 1,
+    "titulo": "The Godfather",
+    "imagem": "img/godfather.jpg",
+    "avaliacao": 9.2,
+    "genero": "Crime, Drama",
+    "status": "Lançamento",
+    "ano": 1972
+  }
+]
+
+
+Commits organizados para cada etapa de desenvolvimento.
+
+Tags aplicadas para marcar versões importantes.
+
+Prints do Projeto
+
+(Adicione aqui capturas de tela do seu projeto em funcionamento)
+
+
+Luís Guilherme 
+

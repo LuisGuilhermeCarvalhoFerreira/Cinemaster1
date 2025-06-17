@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serviços - Cinemaster</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #007acc;
+      margin-bottom: 30px;
+    }
+    .servicos-lista {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .servico {
+      background: #e6f0fa;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
+    .servico:hover {
+      box-shadow: 0 6px 18px rgba(0, 122, 204, 0.3);
+    }
+    .icone {
+      font-size: 50px;
+      color: #007acc;
+      margin-bottom: 15px;
+    }
+    h2 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      color: #005fa3;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  </style>
+  <!-- Font Awesome para ícones -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="container" role="main">
+    <h1>Serviços</h1>
+    <div class="servicos-lista">
+      <div class="servico" tabindex="0" aria-label="Serviço de consultoria em filmes">
+        <div class="icone"><i class="fas fa-film"></i></div>
+        <h2>Consultoria Cinematográfica</h2>
+        <p>Orientação personalizada para escolha de filmes, festivais e tendências do cinema.</p>
+      </div>
+      <div class="servico" tabindex="0" aria-label="Serviço de streaming">
+        <div class="icone"><i class="fas fa-tv"></i></div>
+        <h2>Streaming Exclusivo</h2>
+        <p>Plataforma com seleção exclusiva dos melhores filmes e séries para assinantes.</p>
+      </div>
+      <div class="servico" tabindex="0" aria-label="Serviço de organização de eventos">
+        <div class="icone"><i class="fas fa-ticket-alt"></i></div>
+        <h2>Eventos & Exibições</h2>
+        <p>Organização de sessões especiais, pré-estreias e eventos para amantes da sétima arte.</p>
+      </div>
+      <div class="servico" tabindex="0" aria-label="Serviço de reviews e críticas">
+        <div class="icone"><i class="fas fa-star"></i></div>
+        <h2>Reviews & Críticas</h2>
+        <p>Análises detalhadas e críticas imparciais para ajudar você a escolher o que assistir.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- grafico.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gráfico de Filmes</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="graficoFilmes" width="400" height="200"></canvas>
+
+  <script>
+    // Exemplo de dados estáticos (depois você troca pelo JSON do seu projeto)
+    const dados = {
+      labels: ['Ação', 'Drama', 'Comédia'],
+      datasets: [{
+        label: 'Filmes por Gênero',
+        data: [12, 5, 7],
+        backgroundColor: ['red', 'blue', 'green']
+      }]
+    };
+
+    const config = {
+      type: 'pie',
+      data: dados,
+    };
+
+    new Chart(document.getElementById('graficoFilmes'), config);
+  </script>
+</body>
+</html>

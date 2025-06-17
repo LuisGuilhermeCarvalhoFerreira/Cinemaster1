@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "titulo": "The Godfather",
+    "imagem": "https://upload.wikimedia.org/wikipedia/pt/0/03/Godfather_cover.jpg",
+    "descricao": "Um poderoso chefe da máfia tenta manter o controle de seu império criminoso enquanto sua família enfrenta ameaças internas e externas.",
+    "avaliacao": 9.2,
+    "genero": "Crime, Drama",
+    "status": "Lançamento",
+    "ano": 1972
+  },
+  {
+    "id": 2,
+    "titulo": "Inception",
+    "imagem": "https://upload.wikimedia.org/wikipedia/en/7/7f/Inception_ver3.jpg",
+    "descricao": "Um ladrão especializado em extrair segredos do subconsciente durante o sonho é oferecido uma chance de apagar seu passado criminoso se conseguir implantar uma ideia na mente de alguém.",
+    "avaliacao": 8.8,
+    "genero": "Ação, Ficção Científica",
+    "status": "Populares",
+    "ano": 2010
+  },
+  {
+    "id": 3,
+    "titulo": "The Matrix",
+    "imagem": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+    "descricao": "Um hacker descobre que o mundo que conhece é uma simulação criada por máquinas e se junta a um grupo de rebeldes para lutar contra elas.",
+    "avaliacao": 8.7,
+    "genero": "Ação, Ficção Científica",
+    "status": "Clássicos",
+    "ano": 1999
+  },
+  {
+    "id": 4,
+    "titulo": "O Rei Leão",
+    "imagem": "https://upload.wikimedia.org/wikipedia/pt/2/23/The_Lion_King_1994.jpg",
+    "descricao": "A jornada de Simba, um jovem leão, enquanto ele luta para aceitar seu destino como rei da savana africana.",
+    "avaliacao": 8.5,
+    "genero": "Animação, Aventura",
+    "status": "Clássicos",
+    "ano": 1994
+  },
+  {
+    "id": 5,
+    "titulo": "Avengers: Endgame",
+    "imagem": "https://upload.wikimedia.org/wikipedia/pt/9/9d/Avengers_Endgame.jpg",
+    "descricao": "Os Vingadores se reúnem para enfrentar Thanos em uma batalha épica que determinará o destino do universo.",
+    "avaliacao": 8.4,
+    "genero": "Ação, Aventura",
+    "status": "Em Breve",
+    "ano": 2019
+  }
+]
